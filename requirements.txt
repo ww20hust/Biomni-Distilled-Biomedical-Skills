@@ -1,0 +1,3 @@
+# Pin a version in production if needed.
+biomni
+python-dotenv>=1.0.0

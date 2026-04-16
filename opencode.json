@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "biomni": {
+      "type": "local",
+      "command": [
+        "python3",
+        "scripts/run_biomni_mcp.py"
+      ],
+      "enabled": true,
+      "timeout": 120000,
+      "environment": {
+        "BIOMNI_DATA_PATH": ".",
+        "BIOMNI_MCP_TOOL_MODULES": "biomni.tool.database,biomni.tool.genomics"
+      }
+    }
+  },
+  "tools": {
+    "biomni_*": true
+  }
+}
